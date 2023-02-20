@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr=[];
+        var duparr=[];
+        function insert(){
+            var ele=document.getElementById("inp").value;
+            
+            arr.push(ele);
+            duparr.push(ele);
+            document.getElementById("inp").value="";
+            console.log(arr);
+            //console.log(duparr);
+        }
+        function show(){
+            for (let i=0;i<arr.length;i++){
+               // document.getElementById("mydiv").value=arr[i];
+              n=  document.write(arr[i])  ;
+              document.write("<br>")
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button onclick="insert()">insert</button>
+    <button onclick="show()">show</button>
+    <div class="mydiv">
+         
+    </div>
+    
+</body>
+</html>
